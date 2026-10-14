@@ -7,7 +7,7 @@ Desenvolvi este portfólio para o **Laboratório 01 de Desenvolvimento e Integra
 
 - [Repositório do portfólio](https://github.com/Ana-Sena/DIAW-LAB01-Portfolio-Profissional)
 - Aplicação local: http://127.0.0.1:5173
-- Site publicado: **TODO — ainda não publicado**.
+- [Site publicado na Vercel](https://ana-julia-portfolio-six.vercel.app/)
 - [Protótipos e capturas](docs/PROTOTIPOS.md)
 - [Checklist de entrega](docs/ENTREGA.md)
 
@@ -39,7 +39,7 @@ O botão **Escrever um e-mail** usa `mailto:` para abrir o aplicativo de correio
 | Navegação           | React Router 7                                      |
 | Desenvolvimento     | Vite 7, `@vitejs/plugin-react` 5 e npm              |
 | Conteúdo            | Arquivos JSON locais                                |
-| Hospedagem prevista | Vercel                                              |
+| Hospedagem          | Vercel                                              |
 
 Registrei as versões exatas das dependências no `frontend/package-lock.json`. As ferramentas em `tools/` são auxiliares e não são necessárias para executar ou hospedar o portfólio.
 
