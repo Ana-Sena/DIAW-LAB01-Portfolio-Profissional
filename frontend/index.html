@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <script type="module">
+      // Ferramenta de captura somente em desenvolvimento e com URL de captura explícita.
+      if (
+        import.meta.env.DEV &&
+        window.location.hash.includes("figmacapture=")
+      ) {
+        const script = document.createElement("script");
+        script.src = "https://mcp.figma.com/mcp/html-to-design/capture.js";
+        script.async = true;
+        document.head.appendChild(script);
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FAF8FB" />
+    <meta
+      name="description"
+      content="Portfólio de Ana Júlia: Engenharia de Software, Product Ownership, pesquisa e construção de soluções digitais."
+    />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <title>Ana Júlia | Produto & Tecnologia</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

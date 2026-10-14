@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-14T22:17:23.023Z",
+  "browser": "Chrome headless",
+  "mode": "Frontend estático",
+  "checks": [
+    "Conteúdo local completo e projetos em ordem cronológica",
+    "Seletor PT/EN",
+    "Contato direto por e-mail, links confirmados e footer somente com ano",
+    "Três cases locais, acesso direto e retorno às seções",
+    "404 para rotas e cases desconhecidos",
+    "Menu móvel e âncoras",
+    "Home e case sem rolagem horizontal em 360px",
+    "Home e case sem rolagem horizontal em 768px",
+    "Home e case sem rolagem horizontal em 1440px",
+    "Nenhuma chamada ao backend e nenhum erro JavaScript"
+  ],
+  "errors": [],
+  "backendRequests": []
+}

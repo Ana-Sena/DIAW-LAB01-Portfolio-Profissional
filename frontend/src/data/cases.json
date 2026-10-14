@@ -1,0 +1,228 @@
+[
+  {
+    "slug": "petmatch",
+    "title": "PetMatch",
+    "category": "Produto · Desafio de recrutamento · Product Ownership",
+    "nature": "Case exploratório de processo seletivo para demonstrar habilidades de Product Ownership. Não houve desenvolvimento de aplicativo.",
+    "startDate": "2026-01",
+    "endDate": "2026-01",
+    "approximateDate": true,
+    "ongoing": false,
+    "summary": "Facilitando a adoção responsável: priorização de funcionalidades, histórias de usuário e critérios de aceitação.",
+    "tags": [
+      "Produto",
+      "Backlog",
+      "User Stories"
+    ],
+    "materials": [],
+    "technologies": [],
+    "imagePath": "/images/petmatch.svg",
+    "sections": [
+      {
+        "title": "Contexto",
+        "paragraphs": [
+          "O PetMatch foi um desafio de recrutamento voltado à atuação em Product Ownership. A proposta envolvia uma plataforma fictícia de adoção responsável de cães e gatos. O exercício exigia pensar nas funcionalidades do produto, definir prioridades, detalhar histórias de usuário e considerar como avaliar o valor das entregas."
+        ],
+        "items": []
+      },
+      {
+        "title": "Desafio",
+        "paragraphs": [
+          "O principal desafio foi estruturar decisões de produto: identificar quais funcionalidades deveriam receber atenção primeiro, explicar a lógica da priorização e transformar funcionalidades amplas em histórias menores e mais claras para o desenvolvimento."
+        ],
+        "items": []
+      },
+      {
+        "title": "Minha atuação e processo",
+        "paragraphs": [],
+        "items": [
+          "Analisei e organizei funcionalidades considerando o objetivo principal de facilitar a adoção.",
+          "Priorizei funcionalidades e apresentei a justificativa para a ordem escolhida.",
+          "Decompus a funcionalidade Perfil do Animal com Informações Detalhadas em histórias de usuário menores, observando dependências.",
+          "Detalhei uma história sobre registrar a família do animal, para permitir a identificação de animais relacionados e evitar a separação de irmãos ou integrantes da mesma ninhada durante a adoção.",
+          "Defini critérios de aceitação para a seção de animais relacionados no perfil do animal.",
+          "Trabalhei a ideia de primeira entrega/MVP e formas de medir o sucesso da solução no contexto do desafio."
+        ]
+      },
+      {
+        "title": "Exemplo de decisão",
+        "paragraphs": [
+          "A história de registro de família foi pensada para que o perfil do animal apresente seus parentes conhecidos. Caso não haja vínculos registrados, a interface deve informar que não há parentes conhecidos. Essa decisão conecta uma necessidade de quem deseja adotar a um comportamento verificável do produto."
+        ],
+        "items": []
+      },
+      {
+        "title": "Aprendizados",
+        "paragraphs": [
+          "Mais do que definir uma ordem de prioridade para as funcionalidades, o desafio foi uma oportunidade de desenvolver meu raciocínio e aprender a estruturar melhor a justificativa por trás de cada decisão. Em produto, priorizar não significa apenas escolher o que parece mais importante, mas compreender os motivos que sustentam essa escolha e conseguir comunicá-los com clareza.",
+          "A experiência reforçou a importância de fundamentar decisões, considerar diferentes perspectivas e estar preparada para argumentar sobre as escolhas realizadas. Afinal, o desenvolvimento de um produto envolve discussões, restrições e opiniões distintas, e saber explicar o porquê de uma decisão é tão importante quanto tomá-la."
+        ],
+        "items": []
+      }
+    ]
+  },
+  {
+    "slug": "fiis",
+    "title": "Laje — Plataforma de FIIs",
+    "category": "Projeto acadêmico · Product Discovery · UX Research · Requisitos",
+    "nature": "Projeto acadêmico em andamento, iniciado em setembro de 2026. Discovery concluído; implementação ainda não iniciada.",
+    "startDate": "2026-09",
+    "endDate": null,
+    "approximateDate": false,
+    "ongoing": true,
+    "summary": "Da pesquisa à definição de soluções para investidores: o Laje concluiu a fase de Discovery e se prepara para iniciar a implementação.",
+    "tags": [
+      "Pesquisa",
+      "UX",
+      "Requisitos"
+    ],
+    "materials": [],
+    "technologies": [],
+    "imagePath": "/images/fiis.svg",
+    "sections": [
+      {
+        "title": "Momento do projeto",
+        "paragraphs": [
+          "O Laje é um projeto acadêmico sobre Fundos Imobiliários, iniciado em setembro de 2026 e ainda em andamento. A fase de Discovery foi concluída e o projeto vai começar a ser trabalhado na implementação. O case apresenta o processo de pesquisa e definição de requisitos realizado até aqui; nenhuma funcionalidade foi desenvolvida."
+        ],
+        "items": []
+      },
+      {
+        "title": "Contexto",
+        "paragraphs": [
+          "O projeto acadêmico propôs uma plataforma para reunir informações relevantes sobre Fundos Imobiliários (FIIs) e apoiar investidores em suas análises. O foco do trabalho foi compreender como diferentes pessoas avaliam fundos, quais informações consideram importantes e quais dificuldades encontram durante a tomada de decisão."
+        ],
+        "items": []
+      },
+      {
+        "title": "Desafio",
+        "paragraphs": [
+          "Antes de propor funcionalidades, precisávamos entender o problema. Investidores podem utilizar diferentes fontes de informação, comparar indicadores e buscar segurança em suas escolhas, mas suas necessidades variam conforme experiência e objetivos. A questão não era apenas disponibilizar mais dados, e sim identificar quais informações e formas de apresentação poderiam ser realmente úteis."
+        ],
+        "items": []
+      },
+      {
+        "title": "Etapa 1 — Investigação do problema",
+        "paragraphs": [
+          "Elaboramos um roteiro de entrevistas qualitativas abordando o histórico dos participantes com investimentos, critérios de escolha de FIIs, dificuldades, fontes consultadas e recursos que poderiam facilitar a análise. O objetivo era ouvir experiências concretas, evitando partir diretamente de uma solução pronta."
+        ],
+        "items": []
+      },
+      {
+        "title": "Etapa 2 — Análise das entrevistas",
+        "paragraphs": [
+          "A análise apontou, entre os participantes entrevistados, temas como:",
+          "Esses resultados são indícios de uma pesquisa qualitativa com amostra limitada, não conclusões universais sobre todos os investidores."
+        ],
+        "items": [
+          "necessidade de informações claras e fontes confiáveis;",
+          "dificuldade para interpretar alguns indicadores e representações mais densas;",
+          "consulta a diferentes sites, relatórios e aplicativos para reunir informações;",
+          "interesse em comparar fundos e acompanhar investimentos;",
+          "necessidades distintas entre investidores com mais experiência e aqueles em fase de aprendizado."
+        ]
+      },
+      {
+        "title": "Etapa 3 — Personas e mapas de empatia",
+        "paragraphs": [
+          "A partir da pesquisa, foram elaboradas três personas e seus mapas de empatia, representando perfis com objetivos, conhecimentos e dificuldades diferentes. Os artefatos ajudaram a organizar necessidades e a discutir soluções de forma mais orientada ao usuário."
+        ],
+        "items": []
+      },
+      {
+        "title": "Etapa 4 — Propostas de valor e requisitos",
+        "paragraphs": [
+          "Com as necessidades identificadas, avançamos para a construção das propostas de valor, buscando compreender como a plataforma poderia contribuir para resolver os problemas encontrados durante a pesquisa.",
+          "Para isso, utilizamos as três personas desenvolvidas anteriormente, considerando suas diferentes experiências, dificuldades e objetivos ao investir em Fundos Imobiliários.",
+          "A partir das propostas de valor, definimos requisitos funcionais e não funcionais, além de restrições para o produto. Entre as funcionalidades propostas estavam a comparação de fundos, a visualização de indicadores financeiros, o acompanhamento de investimentos e recursos de apoio à compreensão de termos técnicos.",
+          "Essa etapa permitiu conectar os resultados da pesquisa a decisões mais concretas sobre o produto, demonstrando como as necessidades dos usuários poderiam orientar a definição de funcionalidades e do escopo da solução."
+        ],
+        "items": []
+      },
+      {
+        "title": "Oportunidades identificadas",
+        "paragraphs": [
+          "Importante: essas são oportunidades e funcionalidades propostas, não funcionalidades comprovadamente desenvolvidas ou validadas."
+        ],
+        "items": [
+          "Centralizar informações relevantes sobre fundos.",
+          "Facilitar comparações entre alternativas.",
+          "Apresentar indicadores de maneira mais compreensível.",
+          "Apoiar a compreensão de características e riscos dos investimentos.",
+          "Permitir acompanhamento de fundos e carteira, conforme os requisitos propostos."
+        ]
+      },
+      {
+        "title": "Aprendizados",
+        "paragraphs": [
+          "O projeto ajudou a compreender a importância de investigar necessidades antes de definir uma solução. As entrevistas, personas, mapas de empatia e propostas de valor mostraram como a pesquisa pode apoiar decisões de produto e a definição de requisitos mais alinhados aos problemas identificados."
+        ],
+        "items": []
+      }
+    ]
+  },
+  {
+    "slug": "experiencia-po",
+    "title": "Atuação como Product Owner na dti digital",
+    "category": "Experiência profissional · Product Ownership · Metodologias Ágeis",
+    "nature": "Experiência profissional de estágio, descrita sem informações confidenciais.",
+    "startDate": "2026-03",
+    "endDate": null,
+    "approximateDate": false,
+    "ongoing": true,
+    "summary": "Conectando negócio, usuários e tecnologia em uma aplicação voltada à consultoria de marketing.",
+    "tags": [
+      "Product Ownership",
+      "Colaboração",
+      "Agilidade"
+    ],
+    "materials": [],
+    "technologies": [],
+    "imagePath": "/images/experiencia-po.svg",
+    "sections": [
+      {
+        "title": "Contexto",
+        "paragraphs": [
+          "Desde março de 2026, atuo como estagiária de Product Owner na dti digital, em uma aplicação voltada à consultoria de marketing, cujo objetivo é auxiliar empresas na tomada de decisões relacionadas aos seus investimentos em publicidade. Continuo nessa atuação atualmente.",
+          "Nesse contexto, participo do desenvolvimento e da evolução do produto, contribuindo para o alinhamento entre as necessidades do cliente, os objetivos de negócio e o trabalho realizado pela equipe técnica."
+        ],
+        "items": []
+      },
+      {
+        "title": "Meu papel",
+        "paragraphs": [
+          "Minha atuação está concentrada em apoiar a construção de um produto que atenda às necessidades dos usuários e às expectativas do cliente.",
+          "Para isso, trabalho na conexão entre diferentes envolvidos no desenvolvimento, incluindo clientes, desenvolvedores, profissionais de QA, arquitetura e liderança.",
+          "Entre minhas principais atividades estão:"
+        ],
+        "items": [
+          "Gestão e priorização do backlog: organização das demandas e apoio à definição do que deve ser desenvolvido, considerando necessidades, prioridades e objetivos do produto.",
+          "Escrita de histórias de usuário: detalhamento das funcionalidades e organização das demandas em entregas menores e mais claras para a equipe.",
+          "Refinamentos: condução de discussões para esclarecer requisitos, alinhar entendimentos e preparar as demandas para o desenvolvimento.",
+          "Alinhamento com stakeholders: participação em reuniões com clientes e liderança para discutir expectativas, novas funcionalidades, prioridades e riscos.",
+          "Cerimônias ágeis: participação e facilitação de reuniões de Sprint Planning e Sprint Review.",
+          "Documentação do produto: criação e atualização de materiais que apoiam o entendimento das funcionalidades e decisões tomadas."
+        ]
+      },
+      {
+        "title": "Desafios e responsabilidades",
+        "paragraphs": [
+          "Um dos principais desafios da minha atuação é compreender diferentes perspectivas e contribuir para decisões que equilibrem as necessidades do cliente com as possibilidades e limitações da equipe técnica.",
+          "A priorização do backlog, por exemplo, exige mais do que organizar uma lista de tarefas. É necessário compreender o contexto de cada demanda, avaliar sua importância e discutir como ela se relaciona com os objetivos do produto.",
+          "Outro desafio está na comunicação. Como Product Owner, preciso transitar entre discussões de negócio e questões técnicas, buscando garantir que todos compartilhem o mesmo entendimento sobre o que será desenvolvido e por quê."
+        ],
+        "items": []
+      },
+      {
+        "title": "Aprendizados",
+        "paragraphs": [
+          "Minha experiência como estagiária de Product Owner tem sido fundamental para desenvolver habilidades que vão além do conhecimento técnico.",
+          "Ao participar de reuniões, refinamentos e decisões sobre o produto, venho desenvolvendo minha capacidade de comunicação, organização, argumentação e colaboração com diferentes profissionais.",
+          "Também passei a compreender melhor a importância das etapas que antecedem o desenvolvimento de uma funcionalidade. Discutir necessidades, avaliar alternativas, definir prioridades e transformar problemas em demandas claras são atividades que despertaram meu interesse pela área de Produto.",
+          "Essa experiência reforçou minha identificação com Product Ownership e com a possibilidade de atuar na conexão entre negócio, usuários e tecnologia, contribuindo para que as soluções desenvolvidas façam sentido para quem realmente irá utilizá-las."
+        ],
+        "items": []
+      }
+    ]
+  }
+]
