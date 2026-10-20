@@ -2,7 +2,6 @@
 
 Desenvolvi este portfólio para o **Laboratório 01 de Desenvolvimento e Integração de Aplicações Web (DIAW), da PUC Minas**. Meu objetivo é reunir minha apresentação pessoal, projetos, experiência profissional e formas de contato em uma aplicação web responsiva.
 
-
 ## Links úteis
 
 - [Repositório do portfólio](https://github.com/Ana-Sena/DIAW-LAB01-Portfolio-Profissional)
@@ -17,12 +16,10 @@ Construí uma aplicação web para apresentar minha trajetória como estudante d
 
 Utilizei React com Vite, JavaScript e CSS para organizar as seções e páginas. Os projetos, experiências e textos dos cases ficam em arquivos JSON locais e são incorporados à aplicação. A timeline organiza os projetos por data, e uma página reutilizável apresenta os três relatos completos.
 
-
-
 ## Funcionalidades principais
 
 - Menu com Início, Sobre Mim, Projetos, Experiências e Contato.
-- Apresentação em português e inglês com seletor PT/EN.
+- Site completo em português e inglês com seletor PT/EN no cabeçalho e preferência salva no navegador.
 - Timeline de projetos em ordem cronológica, com datas mensais e indicação de data aproximada quando necessário.
 - Experiência profissional na dti digital e três páginas de case com índice e botão Voltar.
 - Página 404 para rotas e cases inexistentes.
@@ -33,13 +30,13 @@ O botão **Escrever um e-mail** usa `mailto:` para abrir o aplicativo de correio
 
 ## Tecnologias e dependências
 
-| Finalidade          | Tecnologias                                         |
-| ------------------- | --------------------------------------------------- |
-| Interface           | React 19, React DOM 19, JavaScript, HTML e CSS puro |
-| Navegação           | React Router 7                                      |
-| Desenvolvimento     | Vite 7, `@vitejs/plugin-react` 5 e npm              |
-| Conteúdo            | Arquivos JSON locais                                |
-| Hospedagem          | Vercel                                              |
+| Finalidade      | Tecnologias                                         |
+| --------------- | --------------------------------------------------- |
+| Interface       | React 19, React DOM 19, JavaScript, HTML e CSS puro |
+| Navegação       | React Router 7                                      |
+| Desenvolvimento | Vite 7, `@vitejs/plugin-react` 5 e npm              |
+| Conteúdo        | Arquivos JSON locais                                |
+| Hospedagem      | Vercel                                              |
 
 Registrei as versões exatas das dependências no `frontend/package-lock.json`. As ferramentas em `tools/` são auxiliares e não são necessárias para executar ou hospedar o portfólio.
 
@@ -57,7 +54,8 @@ frontend/
   public/images/             # Capas ilustrativas SVG e favicon
   src/
     components/              # Header, Footer, Timeline, ProjectCard e ícones
-    data/                    # cases.json, experiences.json e profile.js
+    data/                    # Cases e experiências em PT/EN, além dos contatos
+    i18n/                    # Estado global do idioma e traduções da interface
     sections/                # Hero, About, Projects, Experiences e Contact
     pages/                   # Home, CaseDetail e NotFound
     services/                # Acesso ao conteúdo local e formatação de datas
@@ -76,7 +74,7 @@ tools/                       # Ferramentas locais auxiliares
 README.md
 ```
 
-Omiti as pastas geradas automaticamente, como `node_modules/` e `dist/`. 
+Omiti as pastas geradas automaticamente, como `node_modules/` e `dist/`.
 
 ## Instalação e execução
 
@@ -92,6 +90,19 @@ Depois, abro http://127.0.0.1:5173. Nas próximas execuções, basta entrar em `
 
 No Windows, utilizo `npm.cmd` para evitar bloqueios de execução de `npm.ps1`. Em outros sistemas, posso usar `npm`. Não preciso iniciar outro processo ou liberar a porta 8080.
 
+## Tradução e conteúdo
+
+Disponibilizei a tradução completa pelo seletor **PT / EN** no cabeçalho, inclusive nas páginas dos cases. A escolha se mantém ao navegar e recarregar a página. Também adaptei as datas, os textos das capas, os títulos das páginas e as descrições de acessibilidade.
+
+Organizei o idioma com React Context e arquivos locais, sem precisar de API de tradução, chave de acesso ou novas dependências. Para atualizar os textos, mantenho as duas versões:
+
+- Interface: textos em português nos componentes e traduções em `frontend/src/i18n/en.json`.
+- Cases: `frontend/src/data/cases.json` e `cases.en.json`.
+- Experiência profissional: `frontend/src/data/experiences.json` e `experiences.en.json`.
+- Apresentação pessoal: versões `pt` e `en` em `frontend/src/sections/About.jsx`.
+- Capas ilustrativas: arquivos SVG em `frontend/public/images/`, com sufixo `.en.svg` para inglês.
+
+Mantenho os mesmos identificadores dos cases (`slug` e `caseSlug`) nos dois idiomas, para preservar os links e compartilhar datas e demais dados comuns.
 
 ## Demonstração e protótipos
 
@@ -103,5 +114,4 @@ Disponibilizei os [wireframes e as telas exportadas ao Figma](docs/PROTOTIPOS.md
 
 ## Documentação
 
-
- [Vite](https://vite.dev/guide/), [React](https://react.dev/), [React Router](https://reactrouter.com/) e [Vite na Vercel](https://vercel.com/docs/frameworks/frontend/vite).
+[Vite](https://vite.dev/guide/), [React](https://react.dev/), [React Router](https://reactrouter.com/) e [Vite na Vercel](https://vercel.com/docs/frameworks/frontend/vite).

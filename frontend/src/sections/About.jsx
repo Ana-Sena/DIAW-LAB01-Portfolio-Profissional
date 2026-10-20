@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useLanguage } from "../i18n/LanguageContext";
 import Icon from "../components/Icon";
 const copy = {
   pt: {
@@ -37,33 +37,17 @@ const interests = [
   "Tecnologia e Negócio",
 ];
 export default function About() {
-  const [language, setLanguage] = useState("pt");
+  const { language, t: translate } = useLanguage();
   const t = copy[language];
   return (
     <section id="sobre" className="section section-tinted">
       <div className="container" lang={language === "pt" ? "pt-BR" : "en"}>
         <div className="section-heading">
           <div>
-            <p className="eyebrow">Um pouco da minha trajetória</p>
+            <p className="eyebrow">
+              {translate("Um pouco da minha trajetória")}
+            </p>
             <h2>{t.title}</h2>
-          </div>
-          <div
-            className="language-switch"
-            role="group"
-            aria-label="Idioma da apresentação"
-          >
-            <button
-              onClick={() => setLanguage("pt")}
-              aria-pressed={language === "pt"}
-            >
-              PT
-            </button>
-            <button
-              onClick={() => setLanguage("en")}
-              aria-pressed={language === "en"}
-            >
-              EN
-            </button>
           </div>
         </div>
         <div className="about-grid">
@@ -101,7 +85,7 @@ export default function About() {
             </h3>
             <ul className="tags interest-tags">
               {interests.map((item) => (
-                <li key={item}>{item}</li>
+                <li key={item}>{translate(item)}</li>
               ))}
             </ul>
           </div>

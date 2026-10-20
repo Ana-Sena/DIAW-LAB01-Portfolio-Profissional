@@ -1,16 +1,16 @@
+import { useLanguage } from "../i18n/LanguageContext";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getCase } from "../services/content";
 import NotFound from "./NotFound";
 import { formatPeriod } from "../services/dates";
 export default function CaseDetail() {
+  const { language, t } = useLanguage();
   const { slug } = useParams();
-  const data = getCase(slug);
+  const data = getCase(slug, language);
   useEffect(() => {
-    document.title = data
-      ? `${data.title} | Ana Júlia`
-      : "Estudo de caso | Ana Júlia";
-  }, [data]);
+    if (data) document.title = `${data.title} | Ana Júlia`;
+  }, [data, language]);
   if (!data) return <NotFound caseMissing />;
   return (
     <main id="conteudo" className="case-page container">
@@ -18,19 +18,21 @@ export default function CaseDetail() {
         className="back-link"
         to={slug === "experiencia-po" ? "/#experiencias" : "/#projetos"}
       >
-        ← Voltar{" "}
-        {slug === "experiencia-po" ? "para experiências" : "para projetos"}
+        {t("← Voltar")}{" "}
+        {slug === "experiencia-po"
+          ? t("para experiências")
+          : t("para projetos")}
       </Link>
       <article>
         <header className="case-hero">
           <div>
-            <p className="eyebrow">Estudo de caso</p>
+            <p className="eyebrow">{t("Estudo de caso")}</p>
             <h1>{data.title}</h1>
             <p className="case-category">{data.category}</p>
             <p>{data.summary}</p>
             <p className="case-nature">{data.nature}</p>
             <p className="meta">
-              {formatPeriod(data)}
+              {formatPeriod(data, language)}
               {data.technologies.length > 0
                 ? ` · ${data.technologies.join(", ")}`
                 : ""}
@@ -44,16 +46,16 @@ export default function CaseDetail() {
           <figure>
             <img
               src={data.imagePath}
-              alt={`Capa ilustrativa de ${data.title}.`}
+              alt={t("Capa ilustrativa de {0}.", data.title)}
             />
             <figcaption>
-              Ilustração editorial · não representa uma tela de produto.
+              {t("Ilustração editorial · não representa uma tela de produto.")}
             </figcaption>
           </figure>
         </header>
         <div className="case-body">
-          <aside className="case-index" aria-label="Nesta página">
-            <p className="eyebrow">Neste case</p>
+          <aside className="case-index" aria-label={t("Nesta página")}>
+            <p className="eyebrow">{t("Neste case")}</p>
             <nav>
               {data.sections.map((section, i) => (
                 <a key={i} href={`#etapa-${i}`}>
@@ -83,7 +85,7 @@ export default function CaseDetail() {
               className="button secondary"
               to={slug === "experiencia-po" ? "/#experiencias" : "/#projetos"}
             >
-              ← Voltar
+              {t("← Voltar")}
             </Link>
           </div>
         </div>

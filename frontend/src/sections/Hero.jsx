@@ -1,3 +1,4 @@
+import { useLanguage } from "../i18n/LanguageContext";
 import Icon from "../components/Icon";
 const areas = [
   ["bulb", "Product", "Discovery"],
@@ -6,31 +7,40 @@ const areas = [
   ["code", "Tecnologia", "e Produto"],
 ];
 export default function Hero() {
+  const { language, t } = useLanguage();
   return (
     <section id="inicio" className="hero section">
       <div className="container">
         <div className="hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">
-              Product Ownership & Engenharia de Software
+              {t("Product Ownership & Engenharia de Software")}
             </p>
             <h1>
-              Conectando
+              {t("Conectando")}
               <br />
-              pessoas, ideias
-              <br />e <em>tecnologia.</em>
+              {t("pessoas, ideias")}
+              <br />
+              {t("e")} <em>{t("tecnologia.")}</em>
             </h1>
             <p className="hero-description">
-              Sou estudante de Engenharia de Software e atuo como estagiária de{" "}
-              <strong>Product Owner</strong>, participando da transformação de
-              necessidades de negócio em soluções digitais.
+              {t(
+                "Sou estudante de Engenharia de Software e atuo como estagiária de",
+              )}{" "}
+              <strong>
+                {language === "en" ? "Product Owner intern" : "Product Owner"}
+              </strong>
+              {t(
+                ", participando da transformação de necessidades de negócio em soluções digitais.",
+              )}
             </p>
             <div className="actions">
               <a className="button" href="#projetos">
-                Ver projetos <Icon name="arrow" />
+                {t("Ver projetos")}
+                <Icon name="arrow" />
               </a>
               <a className="button secondary" href="#sobre">
-                Sobre mim
+                {t("Sobre mim")}
               </a>
             </div>
           </div>
@@ -41,11 +51,11 @@ export default function Hero() {
               <path d="M367 -10C180 110 370 139 222 235S75 340 124 470" />
             </svg>
             <span className="art-caption">
-              Pessoas.
+              {t("Pessoas.")}
               <br />
-              Ideias.
+              {t("Ideias.")}
               <br />
-              Possibilidades.
+              {t("Possibilidades.")}
             </span>
             <span className="art-spark">✳</span>
           </div>
@@ -55,9 +65,9 @@ export default function Hero() {
             <div className="focus-item" key={icon}>
               <Icon name={icon} />
               <p>
-                {line1}
+                {t(line1)}
                 <br />
-                {line2}
+                {t(line2)}
               </p>
             </div>
           ))}

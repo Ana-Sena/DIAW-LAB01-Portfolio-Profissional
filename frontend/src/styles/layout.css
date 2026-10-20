@@ -183,9 +183,16 @@
 }
 .language-switch {
   display: flex;
+  flex-shrink: 0;
   border: 1px solid var(--border);
   border-radius: 7px;
   overflow: hidden;
+}
+.header-inner > .language-switch {
+  order: 2;
+}
+.header-inner > .menu-toggle {
+  order: 3;
 }
 .language-switch button {
   background: transparent;
@@ -625,6 +632,13 @@
   }
   .header-inner {
     height: 68px;
+    gap: 12px;
+  }
+  .header-inner > .language-switch {
+    margin-left: auto;
+  }
+  .header-inner .language-switch button {
+    padding: 9px 12px;
   }
   .brand {
     font-size: 1.4rem;

@@ -1,3 +1,4 @@
+import { useLanguage } from "./i18n/LanguageContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -8,11 +9,12 @@ import NotFound from "./pages/NotFound";
 import "./styles/global.css";
 import "./styles/layout.css";
 export default function App() {
+  const { t } = useLanguage();
   return (
     <BrowserRouter>
       <ScrollManager />
       <a className="skip-link" href="#conteudo">
-        Pular para o conteúdo
+        {t("Pular para o conteúdo")}
       </a>
       <Header />
       <Routes>

@@ -1,6 +1,8 @@
+import { useLanguage } from "../i18n/LanguageContext";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Icon from "./Icon";
+import LanguageSwitch from "./LanguageSwitch";
 export const navigation = [
   ["inicio", "Início"],
   ["sobre", "Sobre Mim"],
@@ -9,6 +11,7 @@ export const navigation = [
   ["contato", "Contato"],
 ];
 export default function Header() {
+  const { t } = useLanguage();
   const [open, setOpen] = useState(false),
     [active, setActive] = useState("inicio");
   const location = useLocation();
@@ -29,7 +32,9 @@ export default function Header() {
         for (const entry of entries)
           if (entry.isIntersecting) setActive(entry.target.id);
       },
-      { rootMargin: "-20% 0px -55% 0px" },
+      {
+        rootMargin: "-20% 0px -55% 0px",
+      },
     );
     navigation.forEach(([id]) => {
       const el = document.getElementById(id);
@@ -40,12 +45,17 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <Link className="brand" to="/#inicio" aria-label="Ana Júlia, início">
+        <Link
+          className="brand"
+          to="/#inicio"
+          aria-label={t("Ana Júlia, início")}
+        >
           Ana Júlia<span>.</span>
         </Link>
+        <LanguageSwitch />
         <button
           className="menu-toggle"
-          aria-label={open ? "Fechar menu" : "Abrir menu"}
+          aria-label={open ? t("Fechar menu") : t("Abrir menu")}
           aria-expanded={open}
           aria-controls="main-navigation"
           onClick={() => setOpen(!open)}
@@ -55,7 +65,7 @@ export default function Header() {
         <nav
           id="main-navigation"
           className={open ? "navigation open" : "navigation"}
-          aria-label="Navegação principal"
+          aria-label={t("Navegação principal")}
           onKeyDown={(e) => {
             if (e.key === "Escape") setOpen(false);
           }}
@@ -67,7 +77,7 @@ export default function Header() {
               to={`/#${id}`}
               aria-current={active === id ? "location" : undefined}
             >
-              {label}
+              {t(label)}
             </Link>
           ))}
         </nav>

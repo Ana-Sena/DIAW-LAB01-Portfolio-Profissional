@@ -1,0 +1,195 @@
+[
+  {
+    "slug": "petmatch",
+    "title": "PetMatch",
+    "category": "Product · Recruitment challenge · Product Ownership",
+    "nature": "An exploratory recruitment case study to demonstrate Product Ownership skills. No application was developed.",
+    "summary": "Supporting responsible adoption through feature prioritization, user stories and acceptance criteria.",
+    "tags": ["Product", "Backlog", "User Stories"],
+    "sections": [
+      {
+        "title": "Context",
+        "paragraphs": [
+          "PetMatch was a recruitment challenge focused on Product Ownership. The brief involved a fictional platform for the responsible adoption of cats and dogs. The exercise required thinking through product features, setting priorities, detailing user stories and considering how to assess the value of deliverables."
+        ],
+        "items": []
+      },
+      {
+        "title": "Challenge",
+        "paragraphs": [
+          "The main challenge was to structure product decisions: identify which features should receive attention first, explain the prioritization rationale and break broad features down into smaller, clearer stories for development."
+        ],
+        "items": []
+      },
+      {
+        "title": "My contribution and process",
+        "paragraphs": [],
+        "items": [
+          "I analyzed and organized features around the main goal of making adoption easier.",
+          "I prioritized features and explained the rationale behind the chosen order.",
+          "I broke the Detailed Animal Profile feature down into smaller user stories, taking dependencies into account.",
+          "I detailed a story about recording an animal's family so that related animals could be identified, helping prevent siblings or members of the same litter from being separated during adoption.",
+          "I defined acceptance criteria for the related animals section of the animal profile.",
+          "I explored an initial release/MVP and ways to measure the solution's success within the challenge."
+        ]
+      },
+      {
+        "title": "A decision in practice",
+        "paragraphs": [
+          "The family registration story was designed to show an animal's known relatives on its profile. If no relationships have been recorded, the interface should state that there are no known relatives. This decision connects an adopter's need to verifiable product behavior."
+        ],
+        "items": []
+      },
+      {
+        "title": "Lessons learned",
+        "paragraphs": [
+          "Beyond deciding which features to prioritize, the challenge was an opportunity to develop my reasoning and learn to better structure the rationale behind each decision. In product work, prioritization is about more than choosing what seems most important: it requires understanding the reasons behind that choice and communicating them clearly.",
+          "The experience reinforced the importance of grounding decisions in sound reasoning, considering different perspectives and being prepared to explain my choices. Product development involves discussions, constraints and differing opinions, and explaining why a decision was made is just as important as making it."
+        ],
+        "items": []
+      }
+    ]
+  },
+  {
+    "slug": "fiis",
+    "title": "Laje — Brazilian Real Estate Funds Platform",
+    "category": "Academic project · Product Discovery · UX Research · Requirements",
+    "nature": "An ongoing academic project started in September 2026. Discovery is complete; implementation has not yet started.",
+    "summary": "From research to solutions for investors: Laje has completed Discovery and is preparing to begin implementation.",
+    "tags": ["Research", "UX", "Requirements"],
+    "sections": [
+      {
+        "title": "Project status",
+        "paragraphs": [
+          "Laje is an ongoing academic project about Brazilian real estate investment funds (Fundos Imobiliários, or FIIs), started in September 2026. Discovery is complete, and implementation is the next step. This case study presents the research and requirements definition process completed so far; no features have been developed."
+        ],
+        "items": []
+      },
+      {
+        "title": "Context",
+        "paragraphs": [
+          "The academic project proposed a platform to bring together relevant information about Brazilian real estate investment funds (FIIs) and support investors in their analysis. The focus was to understand how different people evaluate funds, which information they consider important and what difficulties they encounter when making decisions."
+        ],
+        "items": []
+      },
+      {
+        "title": "Challenge",
+        "paragraphs": [
+          "Before proposing features, we needed to understand the problem. Investors may use different sources of information, compare indicators and seek confidence in their choices, but their needs vary with their experience and goals. The question was not simply how to provide more data, but which information and ways of presenting it would be useful."
+        ],
+        "items": []
+      },
+      {
+        "title": "Step 1 — Investigating the problem",
+        "paragraphs": [
+          "We created a qualitative interview guide covering participants' investment backgrounds, their criteria for selecting FIIs, difficulties, sources consulted and features that could make analysis easier. The goal was to listen to real experiences rather than start with a predetermined solution."
+        ],
+        "items": []
+      },
+      {
+        "title": "Step 2 — Analyzing the interviews",
+        "paragraphs": [
+          "Among the people interviewed, the analysis highlighted themes such as:",
+          "These findings are insights from qualitative research with a limited sample, rather than universal conclusions about all investors."
+        ],
+        "items": [
+          "a need for clear information and reliable sources;",
+          "difficulty interpreting some indicators and complex visualizations;",
+          "consulting multiple websites, reports and apps to gather information;",
+          "interest in comparing funds and tracking investments;",
+          "different needs among experienced investors and those still learning."
+        ]
+      },
+      {
+        "title": "Step 3 — Personas and empathy maps",
+        "paragraphs": [
+          "Based on the research, three personas and their empathy maps were developed, representing profiles with different goals, knowledge and difficulties. These artifacts helped organize needs and discuss solutions with a stronger focus on the user."
+        ],
+        "items": []
+      },
+      {
+        "title": "Step 4 — Value propositions and requirements",
+        "paragraphs": [
+          "With the needs identified, we moved on to developing value propositions, seeking to understand how the platform could help solve the problems found during the research.",
+          "We used the three personas developed earlier, considering their different experiences, difficulties and goals when investing in Brazilian real estate funds.",
+          "From the value propositions, we defined functional and nonfunctional requirements, as well as product constraints. Proposed features included fund comparisons, financial indicator visualizations, investment tracking and tools to help users understand technical terms.",
+          "This step connected research findings to more concrete product decisions, showing how user needs could guide feature definition and the solution's scope."
+        ],
+        "items": []
+      },
+      {
+        "title": "Opportunities identified",
+        "paragraphs": [
+          "These are opportunities and proposed features; they have not been implemented or validated."
+        ],
+        "items": [
+          "Bring relevant fund information together in one place.",
+          "Make it easier to compare alternatives.",
+          "Present indicators in a more understandable way.",
+          "Help users understand investment characteristics and risks.",
+          "Enable fund and portfolio tracking, as outlined in the proposed requirements."
+        ]
+      },
+      {
+        "title": "Lessons learned",
+        "paragraphs": [
+          "The project helped me understand the importance of investigating needs before defining a solution. The interviews, personas, empathy maps and value propositions showed how research can support product decisions and requirements that are better aligned with the problems identified."
+        ],
+        "items": []
+      }
+    ]
+  },
+  {
+    "slug": "experiencia-po",
+    "title": "Working as a Product Owner at dti digital",
+    "category": "Professional experience · Product Ownership · Agile Methodologies",
+    "nature": "Professional internship experience, described without confidential information.",
+    "summary": "Connecting business, users and technology in an application for marketing consultancy.",
+    "tags": ["Product Ownership", "Collaboration", "Agility"],
+    "sections": [
+      {
+        "title": "Context",
+        "paragraphs": [
+          "Since March 2026, I have been working as a Product Owner intern at dti digital on an application for marketing consultancy, designed to help companies make decisions about their advertising investments. I continue in this role today.",
+          "In this context, I participate in product development and evolution, helping align client needs, business goals and the technical team's work."
+        ],
+        "items": []
+      },
+      {
+        "title": "My role",
+        "paragraphs": [
+          "My work focuses on supporting the development of a product that meets user needs and client expectations.",
+          "To do this, I connect the different people involved in development, including clients, developers, QA professionals, architects and leadership.",
+          "My main activities include:"
+        ],
+        "items": [
+          "Backlog management and prioritization: organizing requests and helping define what should be developed, considering needs, priorities and product goals.",
+          "Writing user stories: detailing features and organizing requests into smaller, clearer deliverables for the team.",
+          "Refinement sessions: leading discussions to clarify requirements, build a shared understanding and prepare work for development.",
+          "Stakeholder alignment: attending meetings with clients and leadership to discuss expectations, new features, priorities and risks.",
+          "Agile ceremonies: participating in and facilitating Sprint Planning and Sprint Review meetings.",
+          "Product documentation: creating and updating materials that help explain features and decisions."
+        ]
+      },
+      {
+        "title": "Challenges and responsibilities",
+        "paragraphs": [
+          "One of the main challenges in my role is understanding different perspectives and contributing to decisions that balance client needs with the technical team's capabilities and constraints.",
+          "Backlog prioritization, for example, requires more than organizing a task list. It involves understanding the context of each request, assessing its importance and discussing how it relates to product goals.",
+          "Communication is another challenge. As a Product Owner, I need to move between business discussions and technical matters, helping everyone share the same understanding of what will be developed and why."
+        ],
+        "items": []
+      },
+      {
+        "title": "Lessons learned",
+        "paragraphs": [
+          "My experience as a Product Owner intern has been essential to developing skills beyond technical knowledge.",
+          "By participating in meetings, refinement sessions and product decisions, I have been developing my communication, organization, reasoning and collaboration skills with different professionals.",
+          "I have also gained a better understanding of the steps that precede feature development. Discussing needs, evaluating alternatives, setting priorities and turning problems into clear requests are activities that sparked my interest in Product.",
+          "This experience strengthened my connection with Product Ownership and the opportunity to work at the intersection of business, users and technology, helping ensure that the solutions we develop make sense for the people who will use them."
+        ],
+        "items": []
+      }
+    ]
+  }
+]
